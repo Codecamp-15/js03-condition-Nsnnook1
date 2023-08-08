@@ -1,13 +1,15 @@
-let user = prompt("what is your name");
- if (user === "codecamp") {
-  prompt(Number(password));
-} else if (password = 123456) {
-  user = "codecamp";
-}else if (password != 123456){
-    alert('Wrong password')
-}else if (user != String) {
-    user = "guest";
-    alert("guest");
+let user = prompt("what is your name:");
+if (user === " " || user === null) {
+  user = "guest";
+} else if (user === "codecamp") {
+  let password = prompt("what is your password:");
+  if (password === "123456") {
+    user = "codecamp";
+  } else {
+    alert("Wrong password");
   }
+} else {
+  user = "guest";
+}
 
-alert(user);
+alert("Welcome " + user);
